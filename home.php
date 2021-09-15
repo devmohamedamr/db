@@ -9,15 +9,16 @@ require "db.php";
 
 
 $db = new db();
-$data = [
-    'name' => "ahmed",
-    "email" => "a@A.com",
-    "password" =>123
-];
-$db->edit("user",$data)->where("id","=","12")->excu();
+// $db->connection = "test";
+// $data = [
+//     'name' => "ahmed",
+//     "email" => "a@A.com",
+//     "password" =>123
+// ];
+// $db->edit("user",$data)->where("id","=","12")->excu();
 
 // echo "<pre>";
-// print_r($db->select('user',"`name`")->where("email","=","mina@admin.com")->WhereAnd("name","=","mina saed")->GetRow());
+print_r($db->select('user',"`name`")->where("email","=","a@A.com")->WhereAnd("name","=","mina saed")->GetRow());
 
 
 // $db->insert("user",$data);

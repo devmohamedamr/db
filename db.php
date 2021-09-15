@@ -4,11 +4,11 @@ require "interface.php";
 
 class db implements dbSTD{
 
-    public $connection;
+    private $connection;
 
-    public $query_res;
+    private $query_res;
 
-    public $query;
+    private $query;
 
     public function __construct()
     {
